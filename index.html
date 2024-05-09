@@ -125,16 +125,16 @@
           width: 100%;
           z-index: 5;
 
-	        -webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-          transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+	        -webkit-animation: slide-in-blurred-top 100s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          transition: 0.1s; /* Add a transition effect (when scrolling - and font size is decreased) */
 
 
         }
         #headerback {
-        /*  font-family: 'LED', Arial, sans-serif;
-          font-size: 90px;
-        */  color: #ffffff01; /*
+         font-family: 'LED', Arial, sans-serif;
+          font-size: 150px;
+          color: #ffffff01; /*
           text-align: center;
           padding: 20px 0;
           margin-bottom: 20px; */
@@ -271,7 +271,7 @@
       </div>
 
 <div class="container">
-
+<div class="long"><br><br><br><br><br><br><br><br><br><br><br><br><br> </div>
     <div class="project">
         <img src="https://via.placeholder.com/800x400" alt="Project Image">
         <h2>Project Title</h2>
@@ -298,15 +298,17 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+
     document.getElementById("header").style.fontSize = "30px";
     document.getElementById("header").style.textAlign = "left";
     document.getElementById("header").style.marginLeft = "20px";
-    document.getElementById("headerback").style.fontSize = "65px";
+    document.getElementById("headerback").style.fontSize = "80px";
+
   } else {
     document.getElementById("header").style.fontSize = "90px";
     document.getElementById("header").style.textAlign = "center";
     document.getElementById("header").style.textMarginLeft = "0px";
-    document.getElementById("headerback").style.fontSize = "120px";
+    document.getElementById("headerback").style.fontSize = "150px";
   }
 }
 </script>
