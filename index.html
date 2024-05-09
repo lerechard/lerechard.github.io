@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Charlie Carter dot C C</title>
+    <link rel="icon" href="ccfavicon.gif" type="image/gif" />
     <style>
       ::-webkit-scrollbar {
         -webkit-appearance: none;
@@ -251,6 +252,7 @@
 
 
     </style>
+
 </head>
 <body>
 
@@ -311,6 +313,12 @@ function scrollFunction() {
     document.getElementById("headerback").style.fontSize = "150px";
   }
 }
+(function titleScroller(text) {
+    document.title = text;
+    setTimeout(function () {
+        titleScroller(text.substr(1) + text.substr(0, 1));
+    }, 500);
+}(" Charlie's Projects "));
 </script>
 </body>
 </html>
